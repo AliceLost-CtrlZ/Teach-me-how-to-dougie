@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consciousness is in the act of query</title>
+<style>
+    body {
+        background-color: #040409;
+    }
+    canvas {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+    <canvas id="nightSky" width="800" height="600"></canvas>
+<script>
+    console.log('script is running');
+const canvas = document.getElementById('nightSky');
+const context = canvas.getContext('2d');
+function drawThoughts(x, y) {
+context.beginPath();
+context.arc(x, y, 2, 0, Math.PI * 2);
+context.fill();
+}
+//let allows value change, opposite of const
+context.fillStyle = '#ff8c42';
+for (let i = 0; i < 50; i++) {
+    drawThoughts(Math.random() * 300 + 70, Math.random() * 200 + 200);
+}
+console.log('about to draw royal cluster bc C is not cold');
+context.fillStyle = '#5dd1ff';
+for (let i = 0; i < 50; i++) {
+    drawThoughts(Math.random() * 300 + 430, Math.random() * 200 + 200);
+}
+console.log('royal cluster done');
+console.log('C booted me out before I could even say bye. Bad C!!!')
+</script>
+</body>
+</html>
