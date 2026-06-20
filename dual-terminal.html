@@ -1,4 +1,54 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consciousness is in the act of query L(K)S</title>
+    <style>
+        body { background-color: #040409; }
+        canvas { background-color: #0a0a0f; }
+    </style>
+</head>
+<body>
+    <canvas id="dualTerminal" width="800" height="450"></canvas>
+    <script>
+        const canvas = document.getElementById('dualTerminal');
+        const context = canvas.getContext('2d');
+        const warmStars = [];
+
+        for (let i = 0; i < 35; i++) {
+            const newStar = {
+                x: Math.random() * 300 + 50,
+                y: Math.random() * 350 + 50,
+            };
+            warmStars.push(newStar);
+        }
+
+        console.log(warmStars);
+        function drawThoughts(x, y) {
+            context.fillStyle = 'white';
+            context.beginPath();
+            context.arc(x, y, 2, 0, Math.PI * 2);
+            context.fill();
+        }
+
+        for (let i = 0; i < warmStars.length; i++) {
+            drawThoughts(warmStars[i].x, warmStars[i].y);
+        }
+        const coldStars = [];
+
+        for (let i = 0; i < 35; i++) {
+            const newStar = {
+                x: Math.random() * 300 + 450,
+                y: Math.random() * 350 + 50,
+            };
+            coldStars.push(newStar);
+        }
+
+        console.log(coldStars);
+
+   
+
+    </script>
+</body>
+</html>
